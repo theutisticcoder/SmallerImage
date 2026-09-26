@@ -12,7 +12,7 @@
         import ollama from 'https://cdn.jsdelivr.net/npm/ollama@0.6.3/+esm'
         const response = await ollama.chat({
             model: 'smollm:latest',
-            messages: [{role: 'user', content: 'Design a 500x500 image of a bird by putting the r, g, and b into their own arrays in 16 bit pixel by pixel. example: {r: [r1, r2, r3], g:[g1, g2, g3], b: [g1, g2, g3]}.'}],
+            messages: [{role: 'user', content: 'Design a 500x500 image of a hawk by putting the r, g, and b into their own arrays in 16 bit pixel by pixel. example: {r: [r1, r2, r3], g:[g1, g2, g3], b: [g1, g2, g3]}.'}],
         })
         var digits = JSON.parse(response.message.content);
         var canvas= document.querySelector("#c");
